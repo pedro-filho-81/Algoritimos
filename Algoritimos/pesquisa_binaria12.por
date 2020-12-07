@@ -7,37 +7,51 @@ programa
 	funcao inicio()
 	{
 		// vetor
-		inteiro vetor[ 5 ]
+		inteiro vetor[ 20 ]
 		// variáveis
 		inteiro resp = 0, pesq = 0, contar = 0
-		caracter parar = 'n'
-		// chamar função adicionar e atribuir a resp
-		adicionar( vetor, 5 )
-		mostrar( vetor, 5 )
-
-		enquanto( parar != 's' ou parar != 'S' )
+		caracter condicao = 's'
+		
+		enquanto( condicao == 's' ou condicao == 'S' )
 		{
-			escreva( "\nInforme o número entre 1 e 30: " )
+			// chamar função adicionar e atribuir a resp
+			adicionar( vetor, 20 )
+			// chamar a função mostrar
+			escreva( "\nVetor original: " )
+			mostrar( vetor, 20 )
+			// chamar a função organizar
+			ordenar( vetor, 20 )
+			// chamar a função mostrar
+			escreva( "\nVetor em ordem: " )
+			mostrar( vetor, 20 )
+			
+			// entrada de dados
+			escreva( "\nDigite um número entre 1 e 30: " )
 			leia( resp )
-			// chamar a função pesquisar e atribuir a pesq
-			pesq = pesquisar( vetor, resp, 5 )
-			// se a resposta igual a pesquisa
-			se( pesq == resp )
+	
+			// chamar a função pesquisar
+			pesq = pesquisar( vetor, resp, 20 )
+			// se pesquisar igual menos 1
+			se( pesq == -1 )
 			{
-				escreva( resp, " já cadastrado.\n" )
-			} // fim if
+				// mostrar
+				escreva( "Valor não encontrado." )
+			} // fim se
+			// se não
 			senao
 			{
-				escreva( "Valor não encontrado. Tente novemente." )
-			}
-						
-		} // fim enquanto
-
-		// chamar a função mostrar
-		mostrar( vetor, 5 )
+				// mostrar
+				escreva( "Valor encontrado" )
+			} // fim se não
+			// perguntar se quer continuar pesquisando
+			escreva("\nDeseja continuar [s/n]? " )
+			// aguardar resposta
+			leia( condicao )
+			
+		} // fim while
 		
 	} // fim função inicio
-	
+
 	// função adicionar nome
 	funcao adicionar( inteiro vt[], inteiro tamanho )
 	{
@@ -47,7 +61,27 @@ programa
 			// vetor recebe número aleatório entre 1 e 30
 			vt[ i ] = util.sorteia(1, 30)
 		} // fim para
-	} // fim função
+		
+	} // fim função adicionar
+
+	// função ordenar
+	funcao ordenar( inteiro vt[], inteiro tamanho )
+	{
+		inteiro auxiliar = 0
+		
+		para( inteiro i = 0; i < tamanho; i++ )
+		{
+			para( inteiro j = 0; j < tamanho; j++ )
+			{
+				se( vt[ i ] < vt[ j ] )
+				{
+					auxiliar = vt[ j ]
+					vt[ j ] = vt[ i ]
+					vt[ i ] = auxiliar			
+				} // fim se
+			} // fim para interno
+		} // fim para externo
+	} // fim função ordenar
 	
 	// função mostrar
 	funcao mostrar( inteiro vt[], inteiro tamanho )
@@ -58,7 +92,7 @@ programa
 			escreva(  vt[ posicao ], " " )
 		} // fim para
 	} // fim função
-	
+
 	// função pesquisar
 	funcao inteiro pesquisar( inteiro vt[], inteiro pesq, inteiro tamanho )
 	{
@@ -71,6 +105,7 @@ programa
 		{
 			// achar o elemento do meio
 			meio = ( fim + comeco ) / 2
+		
 			// se pesquisar igual ao vetor
 			se( pesq == vt[ meio ] )
 			{
@@ -90,6 +125,7 @@ programa
 				comeco = meio + 1
 			} // fim se não			
 		} // fim enquanto
+		
 		// retorne -1 ( valor não encontrado )
 		retorne -1
 	} // fim função pesquisar
@@ -99,7 +135,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 769; 
+ * @POSICAO-CURSOR = 2662; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
