@@ -4,30 +4,49 @@ programa
 	funcao inicio()
 	{
 		// vetor
-		cadeia nome[ 5 ]
+		inteiro vetor[ 5 ]
 		// variáveis
-		cadeia resp, pesq;
+		inteiro resp = 0, pesq = 0, contar = 0
 
-		// chamar função adicionar
-		adicionar( nome, 5 )
+		enquanto( contar < 5 )
+		{
+			// chamar função adicionar e atribuir a resp
+			resp = adicionar( vetor, 5 )
+			// chamar a função pesquisar e atribuir a pesq
+			pesq = pesquisar( vetor, resp, 5 )
+			// se a resposta igual a pesquisa
+			se( resp == pesq )
+			{
+				// escreva
+				escreva( resp, " já cadastrado, tente novamente. \n" )
+			} // fim if
+			// se não
+			senao
+			{
+				// vetor recebe o valor da resposta
+				vetor[ contar ] = resp
+				// soma 1 a contar
+				contar++
+			} // fim se não
+		} // fim enquanto
+
 		// chamar a função mostrar
-		mostrar( nome, 5 )
+		mostrar( vetor, 5 )
 		
 		escreva("")
 	}
 	// função adicionar nome
-	funcao adicionar( cadeia vt[], inteiro tamanho )
+	funcao inteiro adicionar( inteiro vt[], inteiro tamanho )
 	{
-		// loop para adicionar valores
-		para( inteiro posicao = 0; posicao < tamanho; posicao++ )
-		{
-			// entrada de dados 
-			escreva( "Digite um nome: " )
-			leia( vt[ posicao ] )
-		} // fim para
+		inteiro num = 0
+		// entrada de dados 
+		escreva( "Digite um número: " )
+		leia( num )
+		retorne num
 	} // fim função
+	
 	// função mostrar
-	funcao mostrar( cadeia vt[], inteiro tamanho )
+	funcao mostrar( inteiro vt[], inteiro tamanho )
 	{ 
 		// loop para mostrar valores do vetor
 		para( inteiro posicao = 0; posicao < tamanho; posicao++ )
@@ -35,36 +54,30 @@ programa
 			escreva(  vt[ posicao ], " " )
 		} // fim para
 	} // fim função
+	
 	// função pesquisar
-	funcao pesquisar( cadeia vt[], cadeia pesq, inteiro tamanho )
+	funcao inteiro pesquisar( inteiro vt[], inteiro pesq, inteiro tamanho )
 	{
-		// variáveis
-		caracter resp = 's'
-		logico achou = falso
-		inteiro 
-		
-
 		// enquanto resposta igual a sim faça
-		enquanto( resp == 's' ou resp == 'S' )
+		para( inteiro i = 0; i < tamanho; i++ )
 		{
+			// se a pesquisa for igual ao vetor
 			 se( pesq == vt[ i ] )
 			 {
+			 	// retorne a paequisa
 			 	retorne pesq
-			 }
-			 se nao
-			 {
-			 	retorne vt[ 
-			 }
-		}
-		
-	}
+			 } // fim if
+		} // fim para
+		// se não retorne -1 (valor não encontrado)
+		retorne -1		
+	} // fim função
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 919; 
+ * @POSICAO-CURSOR = 574; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
