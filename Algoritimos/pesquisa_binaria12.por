@@ -67,16 +67,21 @@ programa
 	// função ordenar
 	funcao ordenar( inteiro vt[], inteiro tamanho )
 	{
+		// variável para auxiliar
 		inteiro auxiliar = 0
-		
+		// loop para ordenar um vetor
 		para( inteiro i = 0; i < tamanho; i++ )
 		{
 			para( inteiro j = 0; j < tamanho; j++ )
 			{
+				// se vetor i menor que vetor j
 				se( vt[ i ] < vt[ j ] )
 				{
+					// variável auxiliar recebe vetor j
 					auxiliar = vt[ j ]
+					// vetor j recebe vetor i
 					vt[ j ] = vt[ i ]
+					// vetor i recebe valor do auxiliar
 					vt[ i ] = auxiliar			
 				} // fim se
 			} // fim para interno
@@ -135,7 +140,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2662; 
+ * @POSICAO-CURSOR = 1999; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
