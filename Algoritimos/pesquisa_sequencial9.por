@@ -1,6 +1,8 @@
 programa
 {
-	
+	// Algoritimo usado para pesquisa linear, não é o ideal para
+	// grandes vetores
+	//Autor: Pedro Filho, 07/12/2020
 	funcao inicio()
 	{
 		// vetor
@@ -77,7 +79,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 574; 
+ * @POSICAO-CURSOR = 92; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
