@@ -1,2 +1,2 @@
 # Algoritimos
- Exercicios do livro Agoritimo de José Augusto N G Manzano
+ Exercícios do livro Algoritimos do José Augusto N. G.  Manzano.
