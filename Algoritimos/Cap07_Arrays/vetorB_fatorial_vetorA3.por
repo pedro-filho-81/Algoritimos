@@ -65,10 +65,12 @@ programa
 				// calcular o fatorial do vetor A
 				fat *= j
 			} // fim para interno
+			
 			// vetor B recebe o Fatorial do vetor A
 			vt1[ i ] = fat
 			// limpar a variável para novo cálculo
 			fat = 1
+			
 		} // fim para externo
 	} // fim função
 	
@@ -108,7 +110,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1494; 
+ * @POSICAO-CURSOR = 2632; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
