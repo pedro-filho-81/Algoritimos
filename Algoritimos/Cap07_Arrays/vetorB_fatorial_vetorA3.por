@@ -1,11 +1,11 @@
 programa
 {
 /*
- * bc)Construir um programa que leia 15 elementos numéricos inteiros em 
+ * c)Construir um programa que leia 15 elementos numéricos inteiros em 
  * uma matriz A de uma dimensão do tipo vetor. Construir uma matriz B 
  * de mesmo tipo e dimensão, em que cada elemento seja o fatorial 
  * do elemento correspondente armazenado na matriz A. Apresentar 
- * os elementos da matriz B ordenados de forma crescente.
+ * os elementos da matriz B ordenados de forma cres                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               cente.
 	JOSE AUGUSTO NAVARRO GARCIA MANZANO. Algoritmos (p. 374). 
 	Editora Saraiva. Edição do Kindle. . 
  *Pedro Filho 08/12/2020 
@@ -18,18 +18,23 @@ programa
 		// criar vetores
 		inteiro vetorA[ TAMANHO ]
 		inteiro vetorB[ TAMANHO ]
-		// variável
+		// variáveis
 		inteiro resp = 0, pesq = 0
 		
 		// chamar a função adicionar valores
 		adicionar( vetorA, TAMANHO )
 		
 		// chamar a função mostrar para vetor A
+		ordenar( vetorA, TAMANHO )
 		escreva( "Vetor A: " )
 		mostrar( vetorA, TAMANHO )
 
 		// chamar a função fatorial
 		fatorial( vetorA, vetorB, TAMANHO )
+		// chamar a função ordenar
+		ordenar( vetorB, TAMANHO )
+		
+		// CHAMAR A FUNÇÃO MOSTRAR	
 		escreva( "\nVetor B fatorial: " )
 		mostrar( vetorB, TAMANHO )
 		
@@ -54,7 +59,7 @@ programa
 		// loop esterno percorre o vetor A
 		para( inteiro i = 0; i < tamanho; i++ )
 		{
-			// loop para calcular o fatorial
+			// loop para calcular o fatorial de cada valor do vetor A
 			para( inteiro j = 1; j <= vt[ i ]; j++ )
 			{
 				// calcular o fatorial do vetor A
@@ -79,13 +84,31 @@ programa
 		} // fim loop mostrar
 		escreva( "}" )
 	} // fim função
+
+	// função ordenar 
+	funcao ordenar( inteiro vt[], inteiro tamanho )
+	{
+		inteiro aux = 0
+		// loop para organizar o vetor
+		para( inteiro i = 0; i < tamanho; i++ )
+		{
+			para( inteiro j = 0; j < tamanho; j++ )
+			{
+				se( vt[ i ] < vt[ j ] ) {
+					aux = vt[ j ]
+					vt[ j ] = vt[ i ]
+					vt[ i ] = aux
+				} // fim se
+			} // fim para interno
+		}// fim para externo
+	} // fim função ordenar
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2160; 
+ * @POSICAO-CURSOR = 1494; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
