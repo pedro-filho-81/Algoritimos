@@ -31,7 +31,7 @@ programa
 			mostrar( vetorA, TAMANHO )
 			
 			// CHAMAR A FUNﾃ�ﾃグ MOSTRAR	
-			escreva( "\nVetor B: " )
+			escreva( "\n\nVetor B: " )
 			mostrar( vetorB, TAMANHO )
 		
 			escreva( "\nInforme o valor a pesquisar: " )
@@ -123,7 +123,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1529; 
+ * @POSICAO-CURSOR = 1059; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
