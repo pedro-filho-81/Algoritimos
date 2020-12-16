@@ -33,7 +33,7 @@ programa
 		mostrarAB( b, LINHA )
 		// mostrar matria c
 		escreva( "\nMatriz C:\n" )
-		mostrarC( c, a, b, LINHA )
+		mostrarC( c, LINHA )
 
 		escreva("Olá Mundo")
 	} // FIM FUNÇÃO PRINCIPAL
@@ -67,7 +67,7 @@ programa
 	}// fim função para
 
 	// função adicionar valores a matriz C
-	funcao mostrarC( inteiro mtz1[][], inteiro mtz2[], inteiro mtz3[], inteiro linha )
+	funcao mostrarC( inteiro mtz1[][], inteiro linha )
 	{
 		// loop para adicionar valores
 		para( inteiro j = 0; j < linha; j++ ) {
@@ -81,7 +81,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1368; 
+ * @POSICAO-CURSOR = 1849; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
