@@ -31,7 +31,7 @@ programa
 		escreva( "Vetor A:\n" )
 		mostrarAB( a, LINHA )
 		
-		// mostrar matria c
+		// mostrar matrar c
 		escreva( "\nMatriz C:\n" )
 		mostrarC( c, LINHA )
 
@@ -105,7 +105,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2076; 
+ * @POSICAO-CURSOR = 1032; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
