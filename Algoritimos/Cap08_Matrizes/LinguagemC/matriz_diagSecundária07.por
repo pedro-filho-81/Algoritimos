@@ -57,7 +57,7 @@ programa
 				se( i + j == 2 )
 				{
 					// somar os valores da matriz
-					somar += mtz[ i ][ j ] 
+					somar += mtz[ i ][ j ]
 				} // fim si
 			} // fim função para
 			// pular uma lnha
@@ -71,7 +71,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1738; 
+ * @POSICAO-CURSOR = 436; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
