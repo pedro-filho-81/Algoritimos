@@ -29,9 +29,9 @@ programa
 	// função adicionar
 	funcao adicionar( inteiro mtz[][], inteiro linha, inteiro coluna )
 	{
-		// loop para adicionar valores a matriz
+		// loop para adicionar linha
 		para( inteiro i = 0; i < linha; i++ )
-		{
+		{	//loop para adicionar a coluna
 			para( inteiro j = 0; j < coluna; j++ )
 			{
 				// se i igual a j
@@ -70,7 +70,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1334; 
+ * @POSICAO-CURSOR = 898; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
