@@ -11,8 +11,8 @@ programa
 	funcao inicio()
 	{
 		// constante
-		const inteiro LINHA = 3
-		const inteiro COLUNA = 3
+		const inteiro LINHA = 4
+		const inteiro COLUNA = 4
 		
 		// criar matriz
 		inteiro matriz[ LINHA ][ COLUNA ]
@@ -81,8 +81,8 @@ programa
 				{
 					// menor recebe matriz menor
 					maior = mtz[ i ][ j ]
-					indice_i = i + 1
-					indice_j = j + 1				
+					indice_i = i
+					indice_j = j
 				} // fim se externo
 			} // fim para interno
 		} // fim para externo	
@@ -97,7 +97,7 @@ programa
 	funcao posicao( inteiro a, inteiro b )
 	{
 		// imprimir
-		escreva( "\nLinha: ", a, " Coluna: ", b )
+		escreva( "\nNa linha: ", a + 1, " coluna: ", b + 1 )
 	} // fim função posição
 }
 /* $$$ Portugol Studio $$$ 
@@ -105,7 +105,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2033; 
+ * @POSICAO-CURSOR = 2400; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
