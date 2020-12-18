@@ -46,14 +46,14 @@ programa
 		// variável
 		inteiro somar = 0
 		
-		// loop para mostrar valores a matriz
+		// loop para mostrar as linhas
 		para( inteiro i = 0; i < linha; i++ )
-		{
+		{	// loop para mostrar as colunas
 			para( inteiro j = 0; j < coluna; j++ )
 			{
 				// mostrar valores
 				escreva( " ", mtz[ i ][ j ], " " )
-				// se o valor da matriz maior que 10
+				// se a soma de i mais j igual a dois faça
 				se( i + j == 2 )
 				{
 					// somar os valores da matriz
@@ -71,7 +71,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 436; 
+ * @POSICAO-CURSOR = 1610; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
