@@ -7,7 +7,7 @@ programa
 		Backes, André. Linguagem C (p. 129). GEN LTC. Edição do Kindle. 
 	 * Pedro Filho, 18/12/2020
 	 */
-	inclua biblioteca Util --> util
+	inclua biblioteca Util --> util
 	funcao inicio()
 	{
 		// constante
@@ -105,7 +105,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2400; 
+ * @POSICAO-CURSOR = 2084; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
